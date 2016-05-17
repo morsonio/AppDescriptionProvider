@@ -1,0 +1,11 @@
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\test.exe.config
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\test.exe
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\test.pdb
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\protobuf-net.dll
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\SteamKit2.dll
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\protobuf-net.pdb
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\protobuf-net.xml
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Debug\SteamKit2.xml
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\obj\Debug\test.exe
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\obj\Debug\test.pdb

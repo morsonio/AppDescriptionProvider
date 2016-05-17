@@ -1,0 +1,10 @@
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\test.exe.config
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\test.exe
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\test.pdb
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\protobuf-net.dll
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\SteamKit2.dll
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\protobuf-net.pdb
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\protobuf-net.xml
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\bin\Release\SteamKit2.xml
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\obj\Release\test.exe
+c:\users\eryks_000\documents\visual studio 2013\Projects\test\test\obj\Release\test.pdb

@@ -13,6 +13,7 @@ using Newtonsoft.Json.Serialization;
 namespace ConsoleApplication2.ResponceModels
 {
  
+    
     public class AppDetailsModel
     {
 
@@ -24,6 +25,7 @@ namespace ConsoleApplication2.ResponceModels
   
     }
 
+    [Serializable]
     public class AppDetailsDataModel
     {
 

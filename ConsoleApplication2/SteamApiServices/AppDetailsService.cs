@@ -9,8 +9,10 @@ using Newtonsoft.Json;
 
 namespace ConsoleApplication2.SteamApiServices
 {
+    
     public class AppDetailsService
     {
+
         public Dictionary<string, AppDetailsModel> model;
         public AppDetailsService(int appId)
         {

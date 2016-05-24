@@ -20,11 +20,11 @@ namespace ConsoleApplication2.ResponceModels
         /// A list of objects containing the title and app ID of each program available in the store.
         /// </summary>
         [JsonProperty("apps")]
-        public List<App> Apps { get; set; }
+        public List<AppModel> Apps { get; set; }
     }
 
     [JsonObject(MemberSerialization.OptIn)]
-    public sealed class App
+    public sealed class AppModel
     {
         /// <summary>
         /// An integer containing the program's ID.

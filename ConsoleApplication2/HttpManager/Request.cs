@@ -3,42 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace ConsoleApplication2.HttpManager
 {
-    /*public abstract class Request
+    public static class AppRequest
     {
-        protected internal abstract string EndpointUrl { get; }
+        private static string appList = "http://api.steampowered.com/ISteamApps/GetAppList/v2/";
+        private static string appDetails = "http://store.steampowered.com/api/appdetails?appids=";
 
-        public Uri GetUri()
+        public static string GetAppList()
         {
-            if(string.IsNullOrEmpty(this.EndpointUrl))
-            {
-                throw new ArgumentNullException("Z pustego i Samolon nie naleje!");
-            }
-
-            return new Uri(this.EndpointUrl);
-           
+            return Request.Get(appList);
+        }
+        public static string GetAppDetails(int appID)
+        {
+            return Request.Get(appDetails + appID);
         }
     }
-    */
-    /*public static class EndpointBuilder
+    
+    public static class Request
     {
-        public string Build(bool isSecure,ApiNameEnum adres,string method)
+        
+        public static string Get(string url)
         {
-            string endpoint="http://";
-            if (isSecure)
+            try
             {
-                endpoint = "https://";
+                using (var client = new HttpClient())
+                {
+                    return client.GetStringAsync(new Uri(url)).Result;
+                }
             }
-            endpoint += adres + method;
+            catch (Exception ex)
+            {
 
-            return endpoint;
+                throw ex;
+            }
         }
-    }*/
-    /*enum ApiNameEnum
-    {
-        SteamAPI ="api.steampowered.com/",
-        SteamSiteAPI = "store.steampowered.com/"
-    }*/
+    }
 }

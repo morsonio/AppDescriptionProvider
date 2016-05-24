@@ -46,18 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HttpManager\AppDetailsResponce.cs" />
-    <Compile Include="HttpManager\AppListResponce.cs" />
     <Compile Include="HttpManager\Request.cs" />
-    <Compile Include="HttpManager\ResponceManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResponceModels\AppListWrapper.cs" />
-    <Compile Include="ResponceModels\DetailsWrapper.cs" />
-    <Compile Include="HttpManager\RequestManager.cs" />
-    <Compile Include="SteamApiServices\AppDetailsService.cs" />
-    <Compile Include="SteamApiServices\AppListService.cs" />
-    <Compile Include="SteamApiServices\SteamApiFactory.cs" />
+    <Compile Include="ResponceModels\AppListModel.cs" />
+    <Compile Include="ResponceModels\DetailsModel.cs" />
+    <Compile Include="SteamApiServices\SteamApiService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

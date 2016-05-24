@@ -17,15 +17,9 @@ namespace ConsoleApplication2
 {
     class Program
     {
-
-
         static void Main(string[] args)
         {
-
-
-            // Pobieram listę apek
-            AppListService test = new AppListService();
-
+            #region zapisDoPliku
             /*using (StreamWriter writer = new StreamWriter("WszystkieApki.txt"))
             {
                 foreach (var app in test.model.Data.Apps)
@@ -36,37 +30,47 @@ namespace ConsoleApplication2
                     }
 
                 }
-            }*/
+            }
 
-            //TODO Dokończyć próbę zczytywania z listy JSONÓW
+         
+            
             using (StreamReader reader = new StreamReader("WszystkieApki.txt"))
             {
-                List<Dictionary<string, AppDetailsModel>> model = new List<Dictionary<string,AppDetailsModel>>();
+                
                 while (!reader.EndOfStream)
                 {
                      model.Add(JsonConvert.DeserializeObject<Dictionary<string, AppDetailsModel>>(reader.ReadLine()));
                 }
 
-                foreach (var item in model)
+                
+            }
+
+
+            foreach (var element in model)
+            {
+                foreach (var item in element)
                 {
-                    Console.WriteLine(model.Select(x=> x.Values.Select(y => y.Data.AppName)).ToString());
+                    if (item.Value.Data!=null)
+                    {
+                        Console.WriteLine(item.Value.Data.AppName); 
+                    }
+                    
                 }
             }
 
-            
 
+          
+            */
 
+            #endregion
 
-            //Pobieram apke dla konkretnego id... 
-            //AppDetailsService test2 = new AppDetailsService(1630);
+            SteamAppsService dupa = new SteamAppsService();
 
+            dupa.getTitles();
+            dupa.FilterFakeApps();
 
-            // Console.WriteLine(test2.model.Where(x =>x.Key=="1630").FirstOrDefault().Value.Data.AppAbout);
-            //Najlepiej wszystko co jest pobierane widać w debuggerze.
             Console.ReadKey();
         }
     }
-
-
 }
 

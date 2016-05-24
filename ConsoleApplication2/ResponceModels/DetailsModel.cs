@@ -18,7 +18,7 @@ namespace ConsoleApplication2.ResponceModels
     {
 
         [JsonProperty("success")]
-        public bool HasFound { get; set; }
+        public bool IsExist { get; set; }
 
         [JsonProperty("data")]
         public AppDetailsDataModel Data { get; set; }
@@ -33,7 +33,7 @@ namespace ConsoleApplication2.ResponceModels
         public string AppType { get; set; }
 
         [JsonProperty("name")]
-        public object AppName {get;set;}
+        public string AppName {get;set;}
 
         [JsonProperty("steam_appid")]
         public object AppID {get;set;}

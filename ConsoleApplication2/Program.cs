@@ -12,6 +12,7 @@ using ConsoleApplication2.SteamApiServices;
 using Newtonsoft.Json.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using ConsoleApplication2.Menu;
 
 namespace ConsoleApplication2
 {
@@ -64,12 +65,14 @@ namespace ConsoleApplication2
 
             #endregion
 
-            SteamAppsService dupa = new SteamAppsService();
+            /*SteamAppsService dupa = new SteamAppsService();
 
             dupa.getTitles();
             dupa.FilterFakeApps();
 
-            Console.ReadKey();
+            Console.ReadKey();*/
+
+            new MenuService();
         }
     }
 }

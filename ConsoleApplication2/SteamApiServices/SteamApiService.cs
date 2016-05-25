@@ -11,30 +11,50 @@ namespace ConsoleApplication2.SteamApiServices
 {
     public class SteamAppsService
     {
-        private AppListModel appTemp { get; set; }
-        private List<AppDetailsDataModel> appList { get; set; }
+        public AppListModel appTemp { get; set; }
+        public List<AppDetailsContainer> appList;
 
         public void getTitles()
         {
             this.appTemp = JsonConvert.DeserializeObject<AppListModel>(AppRequest.GetAppList());
         }
 
-        public void FilterFakeApps()
+        public void mapList()
         {
-            appList = new List<AppDetailsDataModel>();
+            appList = new List<AppDetailsContainer>();
+
+            foreach (AppModel application in appTemp.Data.Apps)
+            {
+                appList.Add(new AppDetailsContainer()
+                {
+                    Data = new Data()
+                    {
+                        Name = application.Name,
+                        SteamAppid = application.AppID,
+                    }
+                });
+            }
+        }
+
+        
+       /* public void FilterFakeApps()
+        {
+            
 
             foreach (AppModel app in appTemp.Data.Apps)
             {
-                AppDetailsModel appDetails = 
-                    JsonConvert.DeserializeObject<Dictionary<string, AppDetailsModel>>(AppRequest.GetAppDetails(app.AppID))
-                    .FirstOrDefault().Value;
+                AppDetailsContainer appDetails = JsonConvert.DeserializeObject<AppDetailsContainer>(AppRequest.GetAppDetails(app.AppID));
+                   /* JsonConvert.DeserializeObject<Dictionary<string, AppDetailsModel>>(AppRequest.GetAppDetails(app.AppID))
+                    .FirstOrDefault().Value;*/
 
-                if (appDetails.IsExist)
+                /*if (appDetails.IsExist)
                 { 
                     appList.Add(appDetails.Data);
                 }
+
+            
             }
-        }
+        }*/
     }
 }
 

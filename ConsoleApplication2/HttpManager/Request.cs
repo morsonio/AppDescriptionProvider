@@ -16,6 +16,7 @@ namespace ConsoleApplication2.HttpManager
         {
             return Request.Get(appList);
         }
+        
         public static string GetAppDetails(int appID)
         {
             return Request.Get(appDetails + appID);
@@ -34,6 +35,7 @@ namespace ConsoleApplication2.HttpManager
                     return client.GetStringAsync(new Uri(url)).Result;
                 }
             }
+
             catch (Exception ex)
             {
 

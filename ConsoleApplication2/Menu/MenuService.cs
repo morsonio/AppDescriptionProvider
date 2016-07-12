@@ -11,12 +11,12 @@ namespace ConsoleApplication2.Menu
 {
     public class MenuService
     {
-        public SteamAppsService steam;
+        public SteamAppObject steam;
         
 
         public MenuService()
         {
-            steam = new SteamAppsService();
+            steam = new SteamAppObject();
             steam.getTitles();
             steam.mapList();
 
@@ -32,13 +32,13 @@ namespace ConsoleApplication2.Menu
                 {
 
 
-                    case "1":
+                    case "2":
                         MenuLogic.Wyszukiwanie("Wpisz nazwę","",steam.appList);
                         break;
-                    case "2":
+                    case "3":
                         MenuLogic.Numer("Podaj numer aplikacji ,której detale mają zostać pobrane");
                         break;
-                    case "3":
+                    case "4":
                         break;
                     default:
                         MenuLogic.MenuGlowne();
@@ -51,15 +51,17 @@ namespace ConsoleApplication2.Menu
             } while (pressedKey != "k");
         }
     }
+    
     public static class MenuLogic
     {
-        private static string[] menu1 = new string[] { "Poka listę dostępnych apek", "Poka detale konkretnej apki", "Pobierz detale dla wszystkich apek" };
+        private static string[] menu1 = new string[] { "Pobierz listę dostępnych apek","Poka listę dostępnych apek", "Poka detale konkretnej apki", "Pobierz detale dla wszystkich apek" };
         
         private static void Naglowek(string menuName)
         {
             Console.WriteLine(menuName);
             Console.WriteLine("------------------------------------------");
         }
+
         public static void MenuGlowne(string menuName, string[] menuOpts)
         {
             Naglowek(menuName);
@@ -70,10 +72,12 @@ namespace ConsoleApplication2.Menu
             }
 
         }
+        
         public static void MenuGlowne()
         {
             MenuLogic.MenuGlowne("Menu główne", menu1);
         }
+        
         public static void Wyszukiwanie(string menuName, string napis, List<AppDetailsContainer> list)
         {
             Console.Clear();
@@ -94,6 +98,7 @@ namespace ConsoleApplication2.Menu
             }
             MenuLogic.MenuGlowne();
         }
+        
         public static void Numer(string menuName)
         {
             Naglowek(menuName);

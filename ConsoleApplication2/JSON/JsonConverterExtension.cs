@@ -12,10 +12,7 @@ namespace ConsoleApplication2
 {
     public class JsonConverterExtension : JsonConverter
     {
-        public override bool CanConvert(Type objectType)
-        {
-            return typeof(AppDetailsContainer).GetTypeInfo().IsAssignableFrom(objectType.GetTypeInfo());
-        }
+        
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
@@ -45,6 +42,11 @@ namespace ConsoleApplication2
             {
                 return false;
             }
+        }
+
+        public override bool CanConvert(Type objectType)
+        {
+            return typeof(AppDetailsContainer).GetTypeInfo().IsAssignableFrom(objectType.GetTypeInfo());
         }
     }
 }

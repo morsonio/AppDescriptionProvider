@@ -12,66 +12,6 @@ using Newtonsoft.Json.Serialization;
 
 namespace ConsoleApplication2.ResponceModels
 {
-
-    #region ja
-   /* public class AppDetailsModel
-    {
-
-        [JsonProperty("success")]
-        public bool IsExist { get; set; }
-
-        [JsonProperty("data")]
-        public AppDetailsDataModel Data { get; set; }
-  
-    }
-
-    [Serializable]
-    public class AppDetailsDataModel
-    {
-
-        [JsonProperty("type")]
-        public string AppType { get; set; }
-
-        [JsonProperty("name")]
-        public string AppName {get;set;}
-
-        [JsonProperty("steam_appid")]
-        public object AppID {get;set;}
-
-        [JsonProperty("required_age")]
-        public object AppReqAge {get;set;}
-
-        [JsonProperty("is_free")]
-        public object AppIsFree {get;set;}
-
-        [JsonProperty("detailed_description")]
-        public object AppDescript {get;set;}
-
-        [JsonProperty("about_the_game")]
-        public object AppAbout {get;set;}
-
-        [JsonProperty("supported_languages")]
-        public object AppLangs {get;set;}
-
-        [JsonProperty("header_image")]
-        public object AppHeaderImg {get;set;}
-
-        [JsonProperty("website")]
-        public object AppWebsite {get;set;}
-
-        [JsonProperty("pc_requirements")]
-        public object AppRequ { get; set; }
-
-        [JsonProperty("platforms")]
-        public object AppPlatforms { get; set; }
-
-        [JsonProperty("genres")]
-        public object AppGeneres { get; set; }
-
-    }*/
-    #endregion
-
-
     public class PcRequirements
     {
         [JsonProperty("minimum")]
@@ -281,14 +221,14 @@ namespace ConsoleApplication2.ResponceModels
         [JsonProperty("website")]
         public string Website { get; set; }
 
-        [JsonProperty("pc_requirements")]
+        /*[JsonProperty("pc_requirements")]
         public PcRequirements PcRequirements { get; set; }
 
         [JsonProperty("mac_requirements")]
         public MacRequirements MacRequirements { get; set; }
 
         [JsonProperty("linux_requirements")]
-        public LinuxRequirements LinuxRequirements { get; set; }
+        public LinuxRequirements LinuxRequirements { get; set; }*/
 
         [JsonProperty("developers")]
         public string[] Developers { get; set; }
@@ -299,7 +239,7 @@ namespace ConsoleApplication2.ResponceModels
         [JsonProperty("packages")]
         public string[] Packages { get; set; }
 
-        [JsonProperty("package_groups")]
+        /*[JsonProperty("package_groups")]
         public PackageGroup[] PackageGroups { get; set; }
 
         [JsonProperty("platforms")]
@@ -327,13 +267,14 @@ namespace ConsoleApplication2.ResponceModels
         public ReleaseDate ReleaseDate { get; set; }
 
         [JsonProperty("support_info")]
-        public SupportInfo SupportInfo { get; set; }
+        public SupportInfo SupportInfo { get; set; }*/
 
         [JsonProperty("background")]
         public string Background { get; set; }
     }
 
-    [JsonConverter(typeof(JsonConverterExtension))]
+    //[JsonConverter(typeof(JsonConverterExtension))]
+
     public class AppDetailsContainer
     {
         [JsonProperty("success")]

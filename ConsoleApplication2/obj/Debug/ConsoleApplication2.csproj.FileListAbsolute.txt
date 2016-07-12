@@ -20,3 +20,12 @@ C:\Users\Morszyszka\Documents\AppDescriptionProvider\ConsoleApplication2\bin\Deb
 C:\Users\Morszyszka\Documents\AppDescriptionProvider\ConsoleApplication2\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Morszyszka\Documents\AppDescriptionProvider\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
 C:\Users\Morszyszka\Documents\AppDescriptionProvider\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\bin\Debug\EntityFramework.dll
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\bin\Debug\EntityFramework.xml
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\obj\Debug\ConsoleApplication2.Migrations.InitialMigration.resources
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\obj\Debug\ConsoleApplication2.csproj.GenerateResource.Cache
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\obj\Debug\ConsoleApplication2.Migrations.addedSteamAppId.resources
+C:\Users\eryks_000\Documents\AppDescriptionProvider\ConsoleApplication2\obj\Debug\ConsoleApplication2.Migrations.nameChange.resources

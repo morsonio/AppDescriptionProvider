@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 
 namespace ConsoleApplication2.SteamApiServices
 {
-    public class SteamAppsService
+    public class SteamAppObject
     {
         public AppListModel appTemp { get; set; }
         public List<AppDetailsContainer> appList;
@@ -36,25 +36,7 @@ namespace ConsoleApplication2.SteamApiServices
             }
         }
 
-        
-       /* public void FilterFakeApps()
-        {
-            
-
-            foreach (AppModel app in appTemp.Data.Apps)
-            {
-                AppDetailsContainer appDetails = JsonConvert.DeserializeObject<AppDetailsContainer>(AppRequest.GetAppDetails(app.AppID));
-                   /* JsonConvert.DeserializeObject<Dictionary<string, AppDetailsModel>>(AppRequest.GetAppDetails(app.AppID))
-                    .FirstOrDefault().Value;*/
-
-                /*if (appDetails.IsExist)
-                { 
-                    appList.Add(appDetails.Data);
-                }
-
-            
-            }
-        }*/
+      
     }
 }
 
